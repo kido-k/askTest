@@ -1,12 +1,12 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
+      <AskDoctor/>
       <h1 class="title">
-        askdoctor
+        hello-project
       </h1>
       <h2 class="subtitle">
-        My wicked Nuxt.js project
+        Nuxt.js project
       </h2>
       <div class="links">
         <a
@@ -23,17 +23,16 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import AskDoctor from '~/components/atoms/AskDoctorLogo.vue'
 
 export default {
   components: {
-    Logo
+    AskDoctor
   }
 }
 </script>
 
 <style>
-
 .container {
   min-height: 100vh;
   display: flex;
@@ -44,7 +43,7 @@ export default {
 
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
   font-size: 100px;
